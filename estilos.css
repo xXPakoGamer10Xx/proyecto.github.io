@@ -76,8 +76,16 @@ footer {
     animation: fadeIn 1s ease-in;
 }
 
+/* Estilos para pantallas grandes (por defecto) */
 .imagen-container {
-    display: flex; /* Utilizamos flexbox para alinear las imágenes horizontalmente */
-    justify-content: space-between; /* Distribuye el espacio horizontalmente entre las imágenes */
-    align-items: center; /* Centra verticalmente las imágenes en el contenedor */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para pantallas pequeñas (como dispositivos móviles) */
+@media screen and (max-width: 768px) {
+    .imagen-container {
+        flex-direction: column; /* Cambia la dirección del flujo a columna */
+    }
 }
