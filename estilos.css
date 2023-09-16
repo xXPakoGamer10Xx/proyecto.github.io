@@ -84,7 +84,7 @@ footer {
 }
 
 /* Estilos para pantallas pequeñas (como dispositivos móviles) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     .imagen-container {
         flex-direction: column; /* Cambia la dirección del flujo a columna */
     }
